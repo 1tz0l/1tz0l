@@ -40,7 +40,6 @@ MISSION    : BUILD SOMETHING AWESOME
 [ CONNECTION ESTABLISHED ]
 ```
 
-
 <div align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%" />
+  <img src="./spider-bg.png" width="100%" alt="Spider Hacker Background" />
 </div>
