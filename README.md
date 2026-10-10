@@ -1,68 +1,44 @@
 
-<div align="center">
+<table>
+<tr>
+<td width="30%" valign="top">
 
-# `1tz0l`
+<!-- خلي معلوماتك الشخصية الحالية هنا -->
+### 1tz0l
+**CYBERSECURITY**
 
-### CYBERSECURITY LEARNER
+Security • Privacy • Freedom
 
-`[ Learn • Explore • Secure ]`
+</td>
+<td width="70%" valign="top">
 
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
-![Status](https://img.shields.io/badge/STATUS-LEARNING-00FF66?style=flat-square&labelColor=0D1117)
+<h2 align="center">1tz0l — CYBERSECURITY</h2>
+<p align="center">
+  <img src="https://www.kali.org/images/kali-logo.svg" width="110" alt="Kali Linux logo">
+</p>
 
-</div>
+### `root@1tz0l:~$ whoami`
+Cybersecurity Learner
 
----
+### `root@1tz0l:~$ skills`
 
-## `01 / ABOUT ME`
-
-```bash
-┌──(1tz0l㉿kali)-[~]
-└─$ whoami
-
-Cybersecurity learner
-Interested in Linux, networks & security.
-Learning step by step.
-```
-
-## `02 / MY ENVIRONMENT`
-
-- `Kali Linux` — Linux environment
-- `Terminal` — Command-line basics
-- `Networking` — Learning protocols and fundamentals
-
-## `03 / LANGUAGES`
-
-| Technology | Level |
+| Skill | Level |
 |---|---|
-| HTML | Pro |
-| CSS | Beginner |
+| HTML | PRO |
+| CSS | HALF PRO |
 | Python | Beginner |
+| Kali Linux | Learning |
+| Networking | Learning |
 
-## `04 / CYBERSECURITY`
+### `root@1tz0l:~$ mission`
+**Learn. Practice. Secure.**
 
-```text
-[+] Learning security fundamentals
-[+] Exploring network protocols
-[+] Studying malware concepts
-[+] Practicing in authorized labs
-[ ] More to learn...
-```
+### MY ENVIRONMENT
+- Kali Linux
+- Linux Terminal
+- Networking
+- Cybersecurity
 
-## `05 / MY GOAL`
-
-> Understand how systems work.
->
-> Learn how to secure them.
->
-> Practice ethically. Keep improving.
-
----
-
-<div align="center">
-
-`CYBERSECURITY LEARNER`
-
-`[ SYSTEM: LEARNING MODE ]`
-
-</div>
+</td>
+</tr>
+</table>
