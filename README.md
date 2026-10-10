@@ -1,81 +1,68 @@
 
 <div align="center">
 
-<img src="./spider-bg.png" width="100%" alt="Spider Hacker Banner" />
+# `1tz0l`
 
-<br/>
+### CYBERSECURITY LEARNER
 
-# 🕷️ SPIDER HACKER
+`[ Learn • Explore • Secure ]`
 
-### `> Welcome to my digital world_`
-
-![Status](https://img.shields.io/badge/STATUS-LEARNING-00FF66?style=for-the-badge&labelColor=050505)
-![Mode](https://img.shields.io/badge/MODE-SPIDER-00FF66?style=for-the-badge&labelColor=050505)
-
-<br/>
-
-```text
-   _____ ____  ___ ____  _____ ____
-  / ___// __ \/   |  _ \/  ___// __ \
-  \__ \/ /_/ / /| | |_) / /   / /_/ /
- ___/ / ____/ ___ |  _ < /___/ _, _/
-/____/_/   /_/  |_|_| \_\\____/_/ |_|
-```
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+![Status](https://img.shields.io/badge/STATUS-LEARNING-00FF66?style=flat-square&labelColor=0D1117)
 
 </div>
 
 ---
 
-## 🕸️ `~/about-me`
+## `01 / ABOUT ME`
 
 ```bash
-$ whoami
-  Spider Hacker
+┌──(1tz0l㉿kali)-[~]
+└─$ whoami
 
-$ current_mission
-  Learn • Code • Create
-
-$ mindset
-  Think differently.
-  Keep learning.
-  Build something awesome.
-
-$ status
-  [■■■■■□□□□□] Leveling up...
+Cybersecurity learner
+Interested in Linux, networks & security.
+Learning step by step.
 ```
 
-## 💻 `~/skills`
+## `02 / MY ENVIRONMENT`
 
-<div align="center">
+- `Kali Linux` — Linux environment
+- `Terminal` — Command-line basics
+- `Networking` — Learning protocols and fundamentals
 
-![Python](https://img.shields.io/badge/Python-050505?style=for-the-badge&logo=python&logoColor=00FF66)
-![HTML5](https://img.shields.io/badge/HTML5-050505?style=for-the-badge&logo=html5&logoColor=00FF66)
-![CSS3](https://img.shields.io/badge/CSS3-050505?style=for-the-badge&logo=css3&logoColor=00FF66)
-![GitHub](https://img.shields.io/badge/GitHub-050505?style=for-the-badge&logo=github&logoColor=00FF66)
+## `03 / LANGUAGES`
 
-</div>
+| Technology | Level |
+|---|---|
+| HTML | Beginner |
+| CSS | Beginner |
+| Python | Beginner |
 
-## 📊 `~/github-stats`
-
-<div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=1tz0l&show_icons=true&hide_border=true&bg_color=050505&title_color=00FF66&text_color=E0FFE8&icon_color=00FF66" alt="GitHub stats" />
-
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=1tz0l&layout=compact&hide_border=true&bg_color=050505&title_color=00FF66&text_color=E0FFE8" alt="Top languages" />
-
-</div>
-
-## 🕷️ `~/motto`
-
-<div align="center">
+## `04 / CYBERSECURITY`
 
 ```text
-> No limits.
-> Just learning.
-> Just building.
-> Enter the spider web...
+[+] Learning security fundamentals
+[+] Exploring network protocols
+[+] Studying malware concepts
+[+] Practicing in authorized labs
+[ ] More to learn...
 ```
 
-**`[ SYSTEM ONLINE • SPIDER MODE ]`**
+## `05 / MY GOAL`
+
+> Understand how systems work.
+>
+> Learn how to secure them.
+>
+> Practice ethically. Keep improving.
+
+---
+
+<div align="center">
+
+`CYBERSECURITY LEARNER`
+
+`[ SYSTEM: LEARNING MODE ]`
 
 </div>
