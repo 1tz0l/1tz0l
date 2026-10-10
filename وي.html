@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1tz0l — Kali Linux</title>
+<style>
+  :root { --ink:#101311; --green:#20d86b; --muted:#59635d; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; min-height:100%; }
+  body {
+    min-height:100vh; display:grid; place-items:center; overflow:hidden;
+    background:#fafbfa; color:var(--ink);
+    font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+  }
+  #network { position:fixed; inset:0; width:100%; height:100%; z-index:0; }
+  .hero {
+    position:relative; z-index:1; width:min(960px,92vw);
+    display:flex; align-items:center; justify-content:center; gap:clamp(24px,5vw,70px);
+    padding:36px 18px;
+  }
+  .mark {
+    width:clamp(150px,22vw,250px); aspect-ratio:1; flex:none;
+    display:grid; place-items:center; border-radius:50%; background:#fff;
+    box-shadow:0 18px 55px #10131112; border:1px solid #e9ece9;
+  }
+  .dragon { width:68%; height:68%; color:#18a957; }
+  .copy { min-width:0; }
+  .eyebrow { color:#17984c; font-size:12px; letter-spacing:.22em; text-transform:uppercase; }
+  h1 { font-family:Arial,Helvetica,sans-serif; font-size:clamp(48px,8vw,92px); line-height:.95; margin:12px 0 18px; letter-spacing:-.07em; }
+  .sub { font-size:clamp(17px,2.4vw,24px); margin:0 0 8px; }
+  .desc { color:var(--muted); margin:0 0 24px; font-size:14px; }
+  .tags { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 26px; }
+  .tags span { border:1px solid #b9e8ca; background:#f1fff6; color:#147b3e; border-radius:3px; padding:7px 10px; font-size:12px; }
+  .links { display:flex; flex-wrap:wrap; gap:16px; font-size:13px; }
+  .links a { color:var(--ink); text-decoration:none; border-bottom:1px solid #a7b0aa; padding-bottom:3px; }
+  .links a:hover { color:#14994b; border-color:#14994b; }
+  .status { position:fixed; bottom:22px; right:24px; z-index:1; font-size:11px; color:#27342b; background:#ffffffd9; border:1px solid #dce3dd; padding:12px 15px; }
+  .dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#20d86b; margin-right:8px; box-shadow:0 0 9px #20d86b; }
+  @media(max-width:600px) {
+    body { overflow:auto; }
+    .hero { flex-direction:column; text-align:center; gap:22px; padding:40px 10px 80px; }
+    .mark { width:160px; }
+    .tags,.links { justify-content:center; }
+    .status { left:12px; right:12px; bottom:10px; text-align:center; }
+  }
+  @media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+<canvas id="network" aria-hidden="true"></canvas>
+<main class="hero">
+  <div class="mark" aria-label="Stylized dragon emblem">
+    <svg class="dragon" viewBox="0 0 160 160" fill="none" role="img" aria-label="Abstract dragon emblem">
+      <path d="M25 48 58 32 89 37 115 18 109 48 139 61 113 72 130 94 101 91 90 121 72 104 53 133 49 99 24 87 45 73Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M58 32 72 57 45 73M89 37 83 65 113 72M72 57 101 91 90 121M45 73 72 57 83 65 72 104M101 91 130 94M53 133 72 104" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="103" cy="55" r="3.5" fill="currentColor"/>
+    </svg>
+  </div>
+  <section class="copy">
+    <div class="eyebrow">Kali Linux · Cybersecurity</div>
+    <h1>1tz0l</h1>
+    <p class="sub">learn. practice. secure.</p>
+    <p class="desc">Cybersecurity learner / Linux enthusiast</p>
+    <div class="tags">
+      <span>Kali Linux</span><span>HTML · CSS</span><span>Python · Beginner</span>
+      <span>Ethical Security</span>
+    </div>
+    <nav class="links" aria-label="Profile links">
+      <a href="https://github.com/1tz0l" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="#skills" onclick="alert('Keep learning, keep building.'); return false;">Skills</a>
+      <a href="https://www.kali.org/" target="_blank" rel="noreferrer">Kali Linux ↗</a>
+    </nav>
+  </section>
+</main>
+<div class="status"><span class="dot"></span>NETWORK ACTIVE — move your cursor</div>
+<script>
+(() => {
+  const canvas = document.getElementById('network');
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+  let w=0,h=0,points=[],mouse={x:-9999,y:-9999},raf=0;
+  const spacing = 115, reach = 150;
+  function resize(){
+    const dpr=Math.min(window.devicePixelRatio||1,2);
+    w=window.innerWidth; h=window.innerHeight;
+    canvas.width=Math.round(w*dpr); canvas.height=Math.round(h*dpr);
+    canvas.style.width=w+'px'; canvas.style.height=h+'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    points=[];
+    const cols=Math.ceil(w/spacing)+1, rows=Math.ceil(h/spacing)+1;
+    for(let y=0;y<rows;y++) for(let x=0;x<cols;x++){
+      points.push({x:x*spacing+(Math.random()-.5)*50,y:y*spacing+(Math.random()-.5)*50,
+        ox:x*spacing,oy:y*spacing, phase:Math.random()*6.28, vx:0,vy:0});
+    }
+  }
+  function move(e){ mouse.x=e.clientX; mouse.y=e.clientY; }
+  function draw(t){
+    ctx.clearRect(0,0,w,h);
+    const time=t*.00025;
+    for(const p of points){
+      p.x=p.ox+Math.sin(time+p.phase)*7;
+      p.y=p.oy+Math.cos(time*.9+p.phase)*7;
+      const dx=p.x-mouse.x,dy=p.y-mouse.y,d=Math.hypot(dx,dy);
+      if(d<reach && d>0){ const force=(reach-d)/reach; p.x+=dx/d*force*22; p.y+=dy/d*force*22; }
+    }
+    for(let i=0;i<points.length;i++){
+      const a=points[i];
+      for(let j=i+1;j<points.length;j++){
+        const b=points[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+        if(d<spacing*1.42){
+          const nearMouse=Math.hypot((a.x+b.x)/2-mouse.x,(a.y+b.y)/2-mouse.y);
+          ctx.strokeStyle=nearMouse<reach*1.4 ? `rgba(25,177,83,${.42*(1-nearMouse/(reach*1.4))})` : `rgba(80,95,85,${.17*(1-d/(spacing*1.42))})`;
+          ctx.lineWidth=nearMouse<reach?1.15:.7;
+          ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+        }
+      }
+      const md=Math.hypot(a.x-mouse.x,a.y-mouse.y);
+      ctx.fillStyle=md<reach?'#159e50':(i%7===0?'#3987d7':'#68736b');
+      ctx.beginPath();ctx.arc(a.x,a.y,md<reach?2.2:1.35,0,Math.PI*2);ctx.fill();
+    }
+    raf=requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize',resize,{passive:true});
+  window.addEventListener('pointermove',move,{passive:true});
+  window.addEventListener('pointerleave',()=>{mouse.x=-9999;mouse.y=-9999;},{passive:true});
+  resize(); raf=requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
