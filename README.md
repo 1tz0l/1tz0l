@@ -35,7 +35,7 @@ Learning step by step.
 
 | Technology | Level |
 |---|---|
-| HTML | Beginner |
+| HTML | Pro |
 | CSS | Beginner |
 | Python | Beginner |
 
