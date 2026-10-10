@@ -1,44 +1,38 @@
 
-<table>
-<tr>
-<td width="30%" valign="top">
-
-<!-- خلي معلوماتك الشخصية الحالية هنا -->
-### 1tz0l
-**CYBERSECURITY**
-
-Security • Privacy • Freedom
-
-</td>
-<td width="70%" valign="top">
-
 <h2 align="center">1tz0l — CYBERSECURITY</h2>
+
 <p align="center">
-  <img src="https://www.kali.org/images/kali-logo.svg" width="110" alt="Kali Linux logo">
+  <img src="https://www.kali.org/images/kali-logo.svg" width="100" alt="Kali Linux Dragon">
 </p>
+
+<p align="center">
+  <b>KALI LINUX • CYBERSECURITY • NETWORKING</b>
+</p>
+
+---
 
 ### `root@1tz0l:~$ whoami`
 Cybersecurity Learner
 
 ### `root@1tz0l:~$ skills`
 
-| Skill | Level |
-|---|---|
-| HTML | PRO |
-| CSS | HALF PRO |
-| Python | Beginner |
-| Kali Linux | Learning |
-| Networking | Learning |
+- **HTML** — PRO
+- **CSS** — HALF PRO
+- **Python** — Beginner
+- **Kali Linux** — Learning
+- **Networking** — Learning
 
 ### `root@1tz0l:~$ mission`
-**Learn. Practice. Secure.**
+`Learn. Practice. Secure.`
 
-### MY ENVIRONMENT
+### `root@1tz0l:~$ environment`
 - Kali Linux
 - Linux Terminal
-- Networking
 - Cybersecurity
+- Network Security
 
-</td>
-</tr>
-</table>
+---
+
+<p align="center">
+  <code>SECURITY • PRIVACY • FREEDOM</code>
+</p>
