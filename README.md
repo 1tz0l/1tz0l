@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="YOUR-ANIMATED-GIF-URL" width="100%" alt="Animated Kali cyber effect">
+</p>
 <h2 align="center">1tz0l — CYBERSECURITY</h2>
 
 <p align="center">
