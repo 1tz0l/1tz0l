@@ -1,9 +1,5 @@
 
 <div align="center">
-  <img src="./spider-bg.png" width="100%" alt="Spider Hacker Background" />
-</div>
-
-<div align="center">
 
 # 🕷️ SPIDER.exe
 
